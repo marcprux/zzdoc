@@ -8,8 +8,8 @@
 
 import Foundation
 import Logging            // @apple/swift-log
-import DocCStaticExporter // @docczz/docc2html
-import DocCHTMLExporter   // @docczz/docc2html
+import DocCStaticExporter // @marcpruxcczz/zzdoc
+import DocCHTMLExporter   // @marcpruxocczz/zzdoc
 
 
 // MARK: - Process Commandline Arguments and Setup Logging
@@ -20,7 +20,7 @@ guard let options = Options(argv: CommandLine.arguments) else {
 }
 
 LoggingSystem.bootstrap(options.logFactory)
-let logger = Logger(label: "docc2html")
+let logger = Logger(label: "zzdoc")
 
 
 // MARK: - Load Templates, if available

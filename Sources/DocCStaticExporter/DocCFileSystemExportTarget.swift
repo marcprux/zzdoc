@@ -19,7 +19,7 @@ open class DocCFileSystemExportTarget: DocCStaticExportTarget,
   open   var targetURL   : URL { return URL(fileURLWithPath: targetPath) }
   
   public init(targetPath: String, fileManager: FileManager = .default,
-              logger: Logger = Logger(label: "docc2html"))
+              logger: Logger = Logger(label: "zzdoc"))
   {
     self.logger      = logger
     self.targetPath  = targetPath

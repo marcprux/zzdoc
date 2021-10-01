@@ -11,7 +11,7 @@ import Logging
 import DocCStaticExporter
 
 func usage() {
-  let tool = URL(fileURLWithPath: CommandLine.arguments.first ?? "docc2html")
+  let tool = URL(fileURLWithPath: CommandLine.arguments.first ?? "zzdoc")
               .lastPathComponent
   print(
     """

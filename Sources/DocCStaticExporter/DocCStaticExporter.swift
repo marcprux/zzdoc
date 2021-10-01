@@ -38,7 +38,7 @@ open class DocCStaticExporter {
               options    : Options,
               templates  : DZRenderingContext.Templates? = nil,
               stylesheet : String? = nil,
-              logger     : Logger  = Logger(label: "docc2html"))
+              logger     : Logger  = Logger(label: "zzdoc"))
   {
     self.target      = target
     self.archiveURLs = archivePathes.map(URL.init(fileURLWithPath:))

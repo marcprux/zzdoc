@@ -15,9 +15,9 @@ let package = Package(
   dependencies: [
     .package(url  : "https://github.com/AlwaysRightInstitute/mustache.git",
              from : "1.0.1"),
-    .package(url  : "https://github.com/DoccZz/DocCArchive.git",
-             from : "0.2.9"),
-com/apple/swift-log.git",
+    .package(url  : "https://github.com/marcprux/DocCArchive.git",
+             from : "0.4.0"),
+    .package(url  : "https://github.com/apple/swift-log.git",
              from : "1.4.0")
   ],
   
@@ -26,7 +26,7 @@ com/apple/swift-log.git",
             dependencies : [ "DocCArchive", "mustache", "Logging" ]),
     .target(name         : "DocCStaticExporter",
             dependencies : [ "DocCArchive", "DocCHTMLExporter", "Logging" ]),
-    .target(name         : "docc2html",
+    .target(name         : "zzdoc",
             dependencies : [ "DocCStaticExporter", "Logging" ])
   ]
 )

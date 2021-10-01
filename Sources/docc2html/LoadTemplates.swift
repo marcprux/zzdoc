@@ -8,7 +8,7 @@
 
 import mustache
 import Foundation
-import DocCHTMLExporter // @docczz/docc2html
+import DocCHTMLExporter // @marcprux/zzdoc
 
 func loadTemplatesAndStylesheet(from path: String)
      -> ( templates: DZRenderingContext.Templates, stylesheet: String )

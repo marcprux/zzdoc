@@ -38,6 +38,6 @@ func exit(_ error: ExitCode) -> Never {
 }
 func exit(_ error: Swift.Error) -> Never {
   if let error = error as? ExitCode { exit(error.rawValue) }
-  Logger(label: "docc2html").error("Unexpected error:", error)
+  Logger(label: "zzdoc").error("Unexpected error:", error)
   exit(42)
 }
