@@ -49,7 +49,7 @@ jobs:
           cd docbuild/
           git clone https://github.com/marcprux/zzdoc.git
           cd zzdoc
-          git checkout $(git describe --tags `git rev-list --tags --max-count=1`)
+          git checkout $(git describe --tags `git rev-list --tags --max-count=1`) # for latest release; otherwise use main
 
           swift run zzdoc --verbose --force ../output/Build/Products/Debug/GreatLibrary.doccarchive ../../docs/
 
