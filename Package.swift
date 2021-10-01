@@ -13,10 +13,10 @@ let package = Package(
   ],
   
   dependencies: [
+    .package(url  : "https://github.com/marcprux/DocCArchive.git",
+             .branch("main")),
     .package(url  : "https://github.com/AlwaysRightInstitute/mustache.git",
              from : "1.0.1"),
-    .package(url  : "https://github.com/marcprux/DocCArchive.git",
-             from : "0.4.0"),
     .package(url  : "https://github.com/apple/swift-log.git",
              from : "1.4.0")
   ],
